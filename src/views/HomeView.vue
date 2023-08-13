@@ -1,138 +1,90 @@
 <template>
-  <div class="home" style="position: relative;left: 0;top: 0;">
+  <div class="home">
+    <p style="display: flex;width: 100%;height: 30px;align-items: center;justify-content: center;font-size: 80px;">
+      <svg t="1691749302644" class="icon" viewBox="0 0 2792 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        p-id="4069" width="128" height="128" style="font-size: 80px;">
+        <path
+          d="M562.874182 698.181818l38.842182-105.937454 79.546181 32.744727 15.150546-109.800727-57.762909-24.087273 44.520727-122.321455h51.130182L688.872727 698.181818h197.957818L907.636364 551.796364l-41.658182 36.584727h-18.013091l-26.577455-306.501818-104.122181-4.584728 19.874909-54.923636L562.641455 162.909091 581.818182 252.253091l-9.472 25.041454h-76.706909l-13.265455 91.485091h56.832l-25.6 71.284364-38.818909-16.384-15.150545 109.800727 17.058909 6.749091L418.909091 698.181818h143.965091z m-269.265455 0c17.873455 0 33.978182-6.260364 48.314182-18.781091a77.730909 77.730909 0 0 0 26.298182-46.708363l13.381818-94.394182 74.612364-13.498182 13.381818-101.12-73.634909 12.520727 7.633454-58.740363h72.704L488.727273 285.952h-71.726546L430.545455 162.909091l-150.318546 59.485091 4.864 59.461818-105.285818 4.096-12.427636 91.508364h90.856727l-12.427637 84.759272-92.788363 16.360728L139.636364 579.723636l91.810909-15.429818L225.745455 607.650909 140.567273 698.181818h153.018182zM512 884.363636l-9.541818-186.181818h-105.425455L349.090909 884.363636h162.909091z m186.181818 0l-62.068363-186.181818H512l10.286545 186.181818H698.181818z m-436.456727 0L325.818182 698.181818H209.454545l-116.363636 186.181818h168.634182zM907.636364 884.363636l-93.090909-186.181818h-93.09091l10.286546 186.181818H907.636364z m197.888 0c17.943273 0 33.722182-6.050909 47.336727-18.199272a71.703273 71.703273 0 0 0 24.133818-44.986182l27.834182-205.847273 31.557818-9.588364 12.986182-100.538181-30.626909 9.588363 16.709818-118.714182h31.557818L1280 305.105455h-32.488727l14.848-108.171637L1114.996364 139.636364l12.823272 84.084363-11.124363 81.384728H1054.487273l-12.986182 90.97309h62.161454l-21.34109 159.883637-64.954182 19.153454-13.917091 99.560728 64.954182-19.130182-19.479273 142.661818L977.454545 884.363636h128.069819z m285.672727 0l80.360727-37.329454L1538.350545 884.363636h248.366546l-200.913455-90.949818 158.789819-73.728 20.340363-143.616h-182.039273l4.840728-35.421091h182.993454L1815.272727 230.4h-165.562182l-10.658909 74.705455h52.293819l-5.818182 36.375272H1633.28l-10.658909 73.704728h53.248l-7.749818 52.666181H1597.44l46.475636-270.941091L1501.090909 139.636364l4.352 90.786909-33.885091 237.451636h-76.474182l6.749091-52.666182h54.225455l10.658909-73.704727h-54.225455l4.840728-34.466909 56.157091-10.542546 9.681454-70.842181-169.425454 20.107636-41.63491 294.865455h189.765819l-4.840728 35.444363h-189.765818l-12.567273 88.087273h358.213819l-1.931637 12.450909-122.973091 60.299636-92.928-53.597091h-143.313454l-4.840727 36.375273 127.813818 72.773818L1186.909091 884.363636h204.288z m643.770182 0l66.094545-480.256h73.541818l13.032728-90.693818h-73.541819l15.825455-116.48L1992.145455 139.636364l15.825454 84.968727-12.101818 88.808727h-74.472727L1908.363636 404.107636h74.472728L1916.741818 884.363636h118.225455z m676.980363-535.272727l10.961455-73.914182h-158.487273l13.032727-50.199272L2373.818182 162.909091l47.104 98.071273-2.001455 14.196363H2268.392727L2257.454545 349.090909h454.493091z m-400.314181 186.181818l6.050909-45.312h267.124363l-6.050909 45.312h125.998546l18.152727-130.024727h-92.741818L2659.397818 349.090909h-124.974545l-30.254546 56.157091h-67.537454L2423.528727 349.090909H2297.483636l13.102546 56.157091H2205.789091L2187.636364 535.272727h123.997091zM1909.899636 861.090909L2001.454545 418.909091h-70.167272L1838.545455 861.090909h71.354181z m241.640728-69.818182L2187.636364 418.909091h-56.040728L2094.545455 791.272727h56.994909z m149.597091 93.090909l71.819636-162.280727h151.528727l-12.8 91.229091-59.997091 62.417455h137.751273c12.450909 0 23.947636-4.189091 34.443636-12.497455 10.472727-8.308364 16.384-18.874182 17.687273-31.674182l26.577455-182.458182h-262.725819l8.86691-19.2h272.546909l12.8-90.298181h-175.150546l7.866182-50.874182h-155.461818l-7.866182 50.897454h-175.150545l-12.8 90.274909h96.442181L2164.363636 884.363636h136.773819z"
+          fill="#d81e06" p-id="4070"></path>
+      </svg>
+    </p>
+    <p style="position: absolute;left: 936px;top: 6px;font-size: 18px;width: 40px;text-align: center;" @click="toggleFullScreen">
+      <svg t="1691750643719" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        p-id="4022" width="32" height="32" >
+        <path
+          d="M63.99 105.442V373.84c0 18.936 15.367 34.305 34.304 34.305 18.936 0 34.304-15.37 34.304-34.305V180.156l218.107 218.176c12.83 12.83 33.62 12.83 46.516 0 12.83-12.898 12.83-33.686 0-46.516L179.045 133.708h193.683c18.935 0 34.304-15.369 34.304-34.304 0-18.935-15.369-34.304-34.304-34.304H104.331C79.29 65.1 63.99 78 63.99 105.442zM917.689 65.1H649.29c-18.935 0-34.304 15.369-34.304 34.304 0 18.936 15.369 34.304 34.304 34.304h193.683L624.798 351.816c-12.83 12.829-12.83 33.618 0 46.516 12.898 12.83 33.686 12.83 46.515 0l218.108-218.176V373.84c0 18.936 15.369 34.305 34.304 34.305 18.936 0 34.304-15.37 34.304-34.305V105.442C958.03 78 942.8 65.1 917.69 65.1zM104.331 957.013H372.73c18.935 0 34.304-15.368 34.304-34.304s-15.369-34.304-34.304-34.304H179.046l218.176-218.108c12.83-12.829 12.83-33.618 0-46.515-12.898-12.83-33.686-12.83-46.516 0L132.6 841.958V648.275c0-18.936-15.368-34.305-34.304-34.305-18.937 0-34.305 15.37-34.305 34.305v268.398c0 27.443 15.299 40.34 40.341 40.34zM958.03 916.672V648.275c0-18.936-15.369-34.305-34.305-34.305-18.935 0-34.304 15.37-34.304 34.305v193.683L671.313 623.782c-12.829-12.83-33.618-12.83-46.515 0-12.83 12.898-12.83 33.686 0 46.515l218.176 218.108H649.291c-18.935 0-34.304 15.368-34.304 34.304s15.369 34.304 34.304 34.304h268.398c25.11 0 40.34-12.897 40.34-40.341z"
+          fill="#bfbfbf" p-id="4023"></path>
+      </svg>
+    </p>
+    <p style="position: absolute;left: 967px;top: 5px;font-size: 22px;">
+      <svg t="1691750688708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        p-id="5855" width="48" height="48">
+        <path
+          d="M571.7 514.1l164.9-164.9c16.3-16.3 16.3-43.1 0-59.4-16.3-16.3-43.1-16.3-59.4 0L512.3 454.7 347.4 289.8c-16.3-16.3-43.1-16.3-59.4 0-16.3 16.3-16.3 43.1 0 59.4l164.9 164.9L288 679c-16.3 16.3-16.3 43.1 0 59.4 16.3 16.3 43.1 16.3 59.4 0l164.9-164.9 164.9 164.9c16.3 16.3 43.1 16.3 59.4 0 16.3-16.3 16.3-43.1 0-59.4L571.7 514.1z"
+          p-id="5856" fill="#bfbfbf"></path>
+      </svg>
+    </p>
+
     <div>
-      <h3 class="ta">微信读书</h3>
-      <span class="el-icon-search"></span>
-      <Sou/>
+      <Sou />
     </div>
-
-    <div class="cen">
-      <div class="z">
-        <img src="https://www4.bing.com//th?id=OHR.ZelenciSprings_ZH-CN8022746409_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp&w=360&h=202" alt="" />
-        &nbsp;&nbsp;&nbsp;<span style="color: white;font-size: 13px;">微信用户</span>&nbsp;&nbsp;&nbsp;
-        <span style="opacity: 0.5;font-size: 13px;color: white;">体验卡今日到期</span>
-      </div>
-      <div style="display: flex;">
-        <Wa/>
-        <div style="float: right;margin-left: 63%;">
-          <span style="line-height: 100px;color: white;">书架</span>
-          <span class="el-icon-arrow-right" style="line-height: 100px;color: white;"></span>
-        </div>
-     </div>
-    </div>
-  <Tui />
-
   </div>
 </template>
-<style lang="less" scoped>
-.cen {
-  width: 90%;
-  height: 200px;
-  background: #575860;
-  margin: auto;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.z{
-  padding: 20px;
-  display: flex;
-  align-items: center;
-}
-.cen .z img{
-  width: 30px;
-  height: 30px;
-  border-radius: 20px;
-}
-.home {
-  width: 100%;
-  height: 100%;
-}
-
-.ta {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.el-tabs__nav-scroll{
-  position: sticky;
-  top: 0;
-}
-
-.el-icon-search {
-  position: absolute;
-  left: 41px;
-  top: 58px;
-}
-</style>
 <script>
-import Tui from '../components/TuiView.vue'
-import Wa from '../components/WaView.vue'
 import Sou from '../components/SouView.vue'
 export default {
- data(){
-  return{
-    showSpinner: false
-  }
- },
- methods:{
-  checkScroll() {
-      const contentElement = document.querySelector('.content');
-      const scrollTop = contentElement.scrollTop;
-      const scrollHeight = contentElement.scrollHeight;
-      const clientHeight = contentElement.clientHeight;
-
-      if (scrollTop + clientHeight >= scrollHeight) {
-        this.showSpinner = true;
-        setTimeout(() => {
-          this.showSpinner = false;
-        }, 2000);
-      }
+  data() {
+    return {
+      isFullScreen: false
     }
- },
- components:{
-  Tui,
-  Wa,
-  Sou
- }
+  },
+  methods:{
+    toggleFullScreen() {
+      if (!this.isFullScreen) {
+        // 进入全屏
+        if (document.documentElement.requestFullscreen) {
+          document.documentElement.requestFullscreen();
+        } else if (document.documentElement.mozRequestFullScreen) {
+          document.documentElement.mozRequestFullScreen();
+        } else if (document.documentElement.webkitRequestFullscreen) {
+          document.documentElement.webkitRequestFullscreen();
+        } else if (document.documentElement.msRequestFullscreen) {
+          document.documentElement.msRequestFullscreen();
+        }
+      } else {
+        // 退出全屏
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      }
+      this.isFullScreen = !this.isFullScreen;
+    }
+  },
+  components: {
+    Sou,
+  }
 }
 </script>
 <style lang="less" scoped>
-.loading-spinner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
+.home {
+  width: 1000px;
+  height: 600px;
+  margin: 150px auto;
+  position: relative;
   left: 0;
-  right: 0;
-  height: 50px;
-  background-color: #f1f1f1;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s;
+  top: 0;
+  background: var(--bg-card);
 }
 
-.loading-spinner.active {
-  visibility: visible;
-  opacity: 1;
+.icon {
+  height: 1em;
+  width: 1em;
 }
 
-.spinner {
-  width: 20px;
-  height: 20px;
-  border: 3px solid #ccc;
-  border-top-color: #777;
-  border-radius: 50%;
-  animation: spinner-rotation 0.8s linear infinite;
-}
-
-@keyframes spinner-rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 </style>
