@@ -12,7 +12,8 @@ import Vant from 'vant';
 import 'vant/lib/index.css';
 
 Vue.use(Vant);
-
+import bus from 'vue-bus';
+Vue.use(bus);
 Vue.config.productionTip = false
 
 new Vue({
